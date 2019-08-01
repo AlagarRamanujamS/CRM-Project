@@ -13,7 +13,7 @@ public class MyHomePage extends ProjectMethods {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(how = How.LINK_TEXT, using = "Leads") 
+	@FindBy(how = How.XPATH, using = "//a[@href='/crmsfa/control/leadsMain']") 
 	WebElement eleleads;
 	
 	public MyLeadsPage clickLeads() {

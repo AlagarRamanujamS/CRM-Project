@@ -33,7 +33,9 @@ public class TC002_CreateLead extends ProjectMethods{
 		.enterCompanyName(cName)
 		.enterFirstName(fName)
 		.enterLastName(lName)
-		.createLeat();
+		.createLeat()
+		.verifyFirstName(fName);
+		
 		
 		
 	}

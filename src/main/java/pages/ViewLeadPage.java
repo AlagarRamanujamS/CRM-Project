@@ -13,20 +13,26 @@ public class ViewLeadPage extends ProjectMethods{
 		PageFactory.initElements(driver, this);
 		
 	}
-	
+		
 	@FindBy(how = How.ID , using = "viewLead_firstName_sp" )
 	WebElement eleViewFirstName;
-	
+	@FindBy(how = How.XPATH,using = "(//a[@class='subMenuButton'])[3]")
+	WebElement eleClickEdit;
+	@FindBy(how = How.ID , using = "viewLead_firstName_sp")
+	WebElement eleVerifyFirstName;
+
 	public ViewLeadPage verifyFirstName(String data) {
-		
 		verifyExactText(eleViewFirstName, data);
 		return this;
 	}
-	
-	
-	
-	
-	
-	
+	public EditLeadPage editLead() {
+		click(eleClickEdit);
+		return new EditLeadPage();
+	}
+	public ViewLeadPage verifyUpdatedFirstName(String data) {
+		verifyExactText(eleVerifyFirstName, data);
+		return this;
+	}
+		
 
 }

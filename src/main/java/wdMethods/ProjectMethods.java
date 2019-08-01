@@ -9,17 +9,15 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 //import org.testng.annotations.Parameters;
 
+
 import utils.ReadExcel;
-public class ProjectMethods extends SeMethods {
+public class ProjectMethods extends SeMethods{
 	
 	@BeforeSuite
 	public void startTest() {
 		startResult();
 	}
-	/*@BeforeClass
-	public void before() {
-		
-	}*/
+	
 	
 	//@Parameters({"url" , "username" , "password"})
 	@BeforeMethod

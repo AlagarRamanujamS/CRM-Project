@@ -33,7 +33,9 @@ public abstract class Report {
 		extent.flush();
 	}
 	
-	
+	public void startTestModule(String ScenarioName , String ScenarioId) {
+		
+	}
 	//@BeforeMethod
 	public void setBeforeData() {
 		logger = extent.createTest(testCaseName, testDesc);

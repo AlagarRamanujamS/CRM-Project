@@ -27,11 +27,4 @@ public class TC001_LoginLogout extends ProjectMethods{
 		
 		
 	}
-	
-	
-	
-	
-	
-	
-
 }

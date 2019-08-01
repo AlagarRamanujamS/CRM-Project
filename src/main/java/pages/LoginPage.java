@@ -15,6 +15,7 @@ public class LoginPage extends ProjectMethods {
 	}
 	
 	//page Factory @Find - > used to locate to Element
+	
 	@FindBy(how = How.ID, using = "username") 
 	WebElement eleUserName;
 	
@@ -23,7 +24,7 @@ public class LoginPage extends ProjectMethods {
 	
 	@FindBy(how = How.CLASS_NAME, using = "decorativeSubmit") 
 	WebElement eleLogin;
-	
+	//@And("Enter the username as DemoCSR")
 	public LoginPage enterUserName(String uName) {
 		//WebElement eleUserName = locateElement("id", "username");
 		type(eleUserName, uName);
