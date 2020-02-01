@@ -1,6 +1,6 @@
-# LeafTaps Testing
+# Simple ERP + CRM Project 
 
-LeafTaps - an open source ERP + CRM which helps to manage project more effectively 
+  This is open source ERP + CRM which helps to manage project more effectively 
 
 * Execute browser compatibility and regression tests using Selenium WebDriver for testing UI 
 * Written approx 30 testcases for testing using Java, Selenium webdriver
